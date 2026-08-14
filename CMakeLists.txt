@@ -15,7 +15,8 @@ find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/ParallelRobotState.msg"
+  "msg/ParallelJointState.msg"
+  "msg/ParallelMobileBaseState.msg"
   DEPENDENCIES
     std_msgs
     geometry_msgs
